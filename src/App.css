@@ -1,5 +1,11 @@
 *,
 *:before,
 *:after {
+  margin: 0;
   box-sizing: border-box;
+}
+
+.App {
+  background-color: rgb(200, 224, 205);
+  height: 100vh;
 }
