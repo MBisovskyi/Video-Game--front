@@ -3,18 +3,27 @@ import React, { useState } from "react";
 import { Chart } from "react-google-charts";
 
 const PieChart = (props) => {
-  const [totalSales, setTotalSales] = useState(0);
+  const [wiiSales, setWiiSales] = useState(1);
+  const [nesSales, setNesSales] = useState(1);
+  const [gbSales, setGbSales] = useState(1);
+  const [dsSales, setDsSales] = useState(1);
+  const [x360Sales, setX360Sales] = useState(1);
+  const [psThreeSales, setPsThreeSales] = useState(1);
+  const [psFourSales, setPsFourSales] = useState(1);
 
   const data = [
-    ["Console", "Total Sales"],
-    ["PS3", 11],
-    ["PS4", 2],
-    ["PC", 2],
-    ["XBox", 7],
+    ["Console", "totalSales"],
+    ["Wii", wiiSales],
+    ["NES", nesSales],
+    ["GB", gbSales],
+    ["DS", dsSales],
+    ["X360", x360Sales],
+    ["PS3", psThreeSales],
+    ["PS4", psFourSales],
   ];
 
   const options = {
-    title: "FIFA 16 game copies sold filtered by console",
+    title: "The best console to invest. Game copies sold since 2013!",
     backgroundColor: "#c8e0cd",
   };
 
