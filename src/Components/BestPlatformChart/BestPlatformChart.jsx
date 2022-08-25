@@ -1,8 +1,8 @@
-import "./BarChart.css";
+import "./BestPlatformChart.css";
 import React, { useEffect, useState } from "react";
 import { Chart } from "react-google-charts";
 
-const BarChart = ({ videoGames }) => {
+const ColumnChart = ({ videoGames }) => {
   let gamesSince2013 = videoGames.filter((game) => game.year >= 2013);
 
   let allPlatforms = gamesSince2013.map((platform) => platform.platform);
@@ -13,21 +13,17 @@ const BarChart = ({ videoGames }) => {
     let platformsArrayGame = gamesSince2013.filter(
       (game) => game.platform === platform
     );
-    let platformSumSales = 0;
+    let platformGlobalSales = 0;
     for (let i = 0; i < platformsArrayGame.length; i++) {
-      platformSumSales += platformsArrayGame[i].globalsales;
+      platformGlobalSales += platformsArrayGame[i].globalsales;
     }
-    return [platform, platformSumSales, "green"];
+    return [platform, platformGlobalSales, "#3D82A1"];
   });
 
   const data = [
     ["Console", "Sold (millions)", { role: "style" }],
     ...platformsData,
   ];
-
-  //   [
-  //     "PC", pcSales, "fill-color: #99AEBB;" + "stroke-width: 1;" + "stroke-color: #3D82A1",
-  //   ]
 
   const options = {
     title:
@@ -41,10 +37,11 @@ const BarChart = ({ videoGames }) => {
     backgroundColor: "transparent",
     colors: ["#3D82A1"],
   };
+
   return (
-    <div className="barchart-wrap">
+    <div className="bestplatformchart-wrap">
       <Chart
-        chartType="BarChart"
+        chartType="ColumnChart"
         width="100%"
         height="400px"
         data={data}
@@ -54,4 +51,4 @@ const BarChart = ({ videoGames }) => {
   );
 };
 
-export default BarChart;
+export default ColumnChart;

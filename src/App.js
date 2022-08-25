@@ -1,9 +1,10 @@
 import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
-import BarChart from "./Components/BarChart/BarChart";
+import BestPlatformChart from "./Components/BestPlatformChart/BestPlatformChart";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import BestGameGenreChart from "./Components/BestGameGenreChart/BestGameGenreChart";
 
 function App() {
   const [videoGames, setVideoGames] = useState([]);
@@ -19,7 +20,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <BarChart videoGames={videoGames} />
+      <BestPlatformChart videoGames={videoGames} />
+      <BestGameGenreChart videoGames={videoGames} />
       <Footer />
     </div>
   );
