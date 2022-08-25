@@ -5,6 +5,7 @@ import BestPlatformChart from "./Components/BestPlatformChart/BestPlatformChart"
 import { useState, useEffect } from "react";
 import axios from "axios";
 import BestGameGenreChart from "./Components/BestGameGenreChart/BestGameGenreChart";
+import VideoGame from "./Components/VideoGame/VideoGame";
 
 function App() {
   const [videoGames, setVideoGames] = useState([]);
@@ -23,6 +24,7 @@ function App() {
       <div className="app-content-wrap">
         <BestPlatformChart videoGames={videoGames} />
         <BestGameGenreChart videoGames={videoGames} />
+        <VideoGame videoGames={videoGames} />
       </div>
 
       <Footer />
