@@ -20,8 +20,11 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <BestPlatformChart videoGames={videoGames} />
-      <BestGameGenreChart videoGames={videoGames} />
+      <div className="app-content-wrap">
+        <BestPlatformChart videoGames={videoGames} />
+        <BestGameGenreChart videoGames={videoGames} />
+      </div>
+
       <Footer />
     </div>
   );

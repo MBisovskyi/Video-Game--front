@@ -3,13 +3,10 @@ import { Chart } from "react-google-charts";
 
 const BestGameGenreChart = ({ videoGames }) => {
   let gamesSince2010 = videoGames.filter((game) => game.year >= 2010);
-  console.log("Games since 2010 ", gamesSince2010);
 
   let allGamesGenre = gamesSince2010.map((game) => game.genre);
-  console.log("Genres ", allGamesGenre);
 
   let distinctGenresArray = [...new Set(allGamesGenre)];
-  console.log("Distinct Genres ", distinctGenresArray);
 
   let gamesGenreData = distinctGenresArray.map((genre) => {
     let genresArray = gamesSince2010.filter((game) => game.genre === genre);
@@ -28,7 +25,7 @@ const BestGameGenreChart = ({ videoGames }) => {
   const options = {
     title: "Best video game genre based on video game copies sold since 2013",
     titleTextStyle: { color: "#3D82A1", fontSize: "22" },
-    chartArea: { width: "50%" },
+    chartArea: { width: "100%" },
     hAxis: {
       title: "Video Game Copies Sold (millions)",
       titleTextStyle: { color: "#3D82A1" },
@@ -38,14 +35,33 @@ const BestGameGenreChart = ({ videoGames }) => {
   };
 
   return (
-    <div className="bestgamegenrechart-wrap">
-      <Chart
-        chartType="ColumnChart"
-        width="100%"
-        height="500px"
-        data={data}
-        options={options}
-      />
+    <div className="genre-container">
+      <div className="bestgamegenrechart-wrap">
+        <Chart
+          chartType="ColumnChart"
+          width="100%"
+          height="500px"
+          data={data}
+          options={options}
+        />
+      </div>
+      <div className="genre-chart-text-field">
+        <p>
+          Hello! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Curabitur nulla justo, aliquet in iaculis non, pharetra in ipsum. Ut a
+          ultricies tortor. Sed eu scelerisque elit. Aliquam erat volutpat.
+          Etiam laoreet nec purus ut ornare. Quisque vitae maximus magna.
+          Quisque sed tempus erat, tempus pretium elit. Suspendisse pretium,
+          enim pharetra aliquet sollicitudin, elit nunc dapibus orci, et mollis
+          tellus tortor a turpis. Pellentesque ut fringilla nibh. Aenean
+          tincidunt non lorem et ullamcorper. Vivamus vel felis non sem
+          tristique blandit eget at nulla. In dapibus dignissim sagittis. Donec
+          vel sapien vitae nibh suscipit volutpat. Pellentesque sit amet eros
+          pulvinar, elementum ex nec, posuere lorem. In hac habitasse platea
+          dictumst. Maecenas pulvinar lobortis nibh sed dignissim. Aenean auctor
+          quam a tempus consequat.
+        </p>
+      </div>
     </div>
   );
 };

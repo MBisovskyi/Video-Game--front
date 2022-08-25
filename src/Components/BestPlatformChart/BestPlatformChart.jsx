@@ -29,7 +29,7 @@ const ColumnChart = ({ videoGames }) => {
     title:
       "Best console to invest in based on video game copies sold since 2013",
     titleTextStyle: { color: "#3D82A1", fontSize: "22" },
-    chartArea: { width: "50%" },
+    chartArea: { width: "100%" },
     hAxis: {
       title: "Video Game Copies Sold (millions)",
       titleTextStyle: { color: "#3D82A1" },
@@ -39,14 +39,33 @@ const ColumnChart = ({ videoGames }) => {
   };
 
   return (
-    <div className="bestplatformchart-wrap">
-      <Chart
-        chartType="ColumnChart"
-        width="100%"
-        height="400px"
-        data={data}
-        options={options}
-      />
+    <div className="platform-container">
+      <div className="platform-chart-text-field">
+        <p>
+          Hello! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Curabitur nulla justo, aliquet in iaculis non, pharetra in ipsum. Ut a
+          ultricies tortor. Sed eu scelerisque elit. Aliquam erat volutpat.
+          Etiam laoreet nec purus ut ornare. Quisque vitae maximus magna.
+          Quisque sed tempus erat, tempus pretium elit. Suspendisse pretium,
+          enim pharetra aliquet sollicitudin, elit nunc dapibus orci, et mollis
+          tellus tortor a turpis. Pellentesque ut fringilla nibh. Aenean
+          tincidunt non lorem et ullamcorper. Vivamus vel felis non sem
+          tristique blandit eget at nulla. In dapibus dignissim sagittis. Donec
+          vel sapien vitae nibh suscipit volutpat. Pellentesque sit amet eros
+          pulvinar, elementum ex nec, posuere lorem. In hac habitasse platea
+          dictumst. Maecenas pulvinar lobortis nibh sed dignissim. Aenean auctor
+          quam a tempus consequat.
+        </p>
+      </div>
+      <div className="bestplatformchart-wrap">
+        <Chart
+          chartType="ColumnChart"
+          width="100%"
+          height="400px"
+          data={data}
+          options={options}
+        />
+      </div>
     </div>
   );
 };

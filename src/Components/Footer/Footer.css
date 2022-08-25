@@ -1,13 +1,23 @@
 .footer-wrap {
-  background-color: antiquewhite;
+  background-color: #002741;
   position: fixed;
   bottom: 0;
   left: 50%;
   translate: -50%;
   text-align: center;
-  width: 20%;
-  height: 3rem;
+  width: 15%;
+  height: 4rem;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding-top: 1rem;
+  padding: 1rem;
+}
+
+.footer-wrap p {
+  width: 93%;
+  color: #ef972c;
+  font-size: 18px;
+  padding: 0.3rem;
+  border: 2px solid white;
+  border-radius: 13px;
+  margin: auto;
 }
