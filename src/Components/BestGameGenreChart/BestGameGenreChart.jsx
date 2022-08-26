@@ -21,7 +21,7 @@ const BestGameGenreChart = ({ videoGames }) => {
 
   const options = {
     title: "Best video game genre based on video game copies sold since 2013",
-    pieHole: 0.4,
+    pieHole: 0.6,
     is3D: false,
     titleTextStyle: { color: "#3D82A1", fontSize: "22" },
     chartArea: { width: "100%" },
@@ -30,12 +30,13 @@ const BestGameGenreChart = ({ videoGames }) => {
       titleTextStyle: { color: "#3D82A1" },
     },
     backgroundColor: "transparent",
-    colors: ["#3D82A1", "#002741"],
+    // colors: ["#3D82A1", "#002741"],
   };
 
   return (
     <div className="genre-container">
       <div className="bestgamegenrechart-wrap">
+        <p className="genre-text">Genre</p>
         <Chart
           chartType="PieChart"
           width="100%"

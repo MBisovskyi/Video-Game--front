@@ -1,4 +1,20 @@
 .genre-container {
   width: 80%;
   padding: 2rem;
+  position: relative;
+}
+
+.genre-text {
+  position: absolute;
+  text-align: center;
+  width: 17%;
+  left: 12.6rem;
+  top: 16rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  box-shadow: 0 0 16px #002741;
+  padding: 1rem;
+  border-radius: 30px;
+  background-color: #002741;
+  color: #c8c8c8;
 }

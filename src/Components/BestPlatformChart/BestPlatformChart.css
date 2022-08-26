@@ -1,4 +1,18 @@
 .platform-container {
   width: 80%;
   padding: 2rem;
+  position: relative;
+}
+
+.platform-text {
+  position: absolute;
+  left: 12.7rem;
+  top: 16rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  box-shadow: 0 0 16px #002741;
+  padding: 1rem;
+  border-radius: 30px;
+  background-color: #002741;
+  color: #c8c8c8;
 }

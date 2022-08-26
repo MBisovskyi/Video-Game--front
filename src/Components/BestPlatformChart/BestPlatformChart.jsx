@@ -26,7 +26,7 @@ const ColumnChart = ({ videoGames }) => {
     title:
       "Best console to invest in based on video game copies sold since 2013",
     titleTextStyle: { color: "#3D82A1", fontSize: "22" },
-    pieHole: 0.4,
+    pieHole: 0.6,
     is3D: false,
     chartArea: { width: "100%" },
     hAxis: {
@@ -34,12 +34,13 @@ const ColumnChart = ({ videoGames }) => {
       titleTextStyle: { color: "#3D82A1" },
     },
     backgroundColor: "transparent",
-    colors: ["#3D82A1", "#002741"],
+    // colors: ["#3D82A1", "#002741"],
   };
 
   return (
     <div className="platform-container">
       <div className="bestplatformchart-wrap">
+        <p className="platform-text">Platform</p>
         <Chart
           chartType="PieChart"
           width="100%"
