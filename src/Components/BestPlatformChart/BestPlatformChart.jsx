@@ -24,17 +24,12 @@ const ColumnChart = ({ videoGames }) => {
 
   const options = {
     title:
-      "Best console to invest in based on video game copies sold since 2013",
-    titleTextStyle: { color: "#3D82A1", fontSize: "22" },
+      "Best video game platform based on video game\n copies sold since 2013",
+    titleTextStyle: { color: "#002741", fontSize: "22" },
     pieHole: 0.6,
     is3D: false,
-    chartArea: { width: "100%" },
-    hAxis: {
-      title: "Video Game Copies Sold (millions)",
-      titleTextStyle: { color: "#3D82A1" },
-    },
+    chartArea: { width: "85%" },
     backgroundColor: "transparent",
-    // colors: ["#3D82A1", "#002741"],
   };
 
   return (

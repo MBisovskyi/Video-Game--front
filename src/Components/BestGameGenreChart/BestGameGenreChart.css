@@ -1,6 +1,6 @@
 .genre-container {
   width: 80%;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   position: relative;
 }
 
@@ -8,13 +8,13 @@
   position: absolute;
   text-align: center;
   width: 17%;
-  left: 12.6rem;
-  top: 16rem;
+  left: 14.1rem;
+  top: 15.9rem;
   font-size: 20px;
   text-transform: uppercase;
-  box-shadow: 0 0 16px #002741;
   padding: 1rem;
   border-radius: 30px;
   background-color: #002741;
   color: #c8c8c8;
+  border: 1px solid white;
 }

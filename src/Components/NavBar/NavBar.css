@@ -1,9 +1,10 @@
 .navbar-wrap {
-  position: relative;
+  position: absolute;
 }
 
 .navbar-wrap img {
   width: 100%;
+  box-shadow: 3px 3px 12px black;
 }
 
 .navbar-wrap div {

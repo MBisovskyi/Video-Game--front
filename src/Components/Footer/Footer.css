@@ -10,6 +10,7 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 1rem;
+  box-shadow: 0px 0px 6px black;
 }
 
 .footer-wrap p {

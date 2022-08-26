@@ -1,4 +1,5 @@
 import "./App.css";
+import Bg from "./assets/bg.png";
 import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
 import BestPlatformChart from "./Components/BestPlatformChart/BestPlatformChart";
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src={Bg} alt="background" />
       <NavBar />
       <div className="app-content-wrap">
         <div className="content-charts">

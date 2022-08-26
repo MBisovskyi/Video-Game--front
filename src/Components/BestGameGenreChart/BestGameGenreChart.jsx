@@ -20,17 +20,12 @@ const BestGameGenreChart = ({ videoGames }) => {
   const data = [["Console", "Sold (millions)"], ...gamesGenreData];
 
   const options = {
-    title: "Best video game genre based on video game copies sold since 2013",
+    title: "Best video game genre based on video game\n copies sold since 2010",
     pieHole: 0.6,
     is3D: false,
-    titleTextStyle: { color: "#3D82A1", fontSize: "22" },
-    chartArea: { width: "100%" },
-    hAxis: {
-      title: "Video Game Copies Sold (millions)",
-      titleTextStyle: { color: "#3D82A1" },
-    },
+    titleTextStyle: { color: "#002741", fontSize: "22" },
+    chartArea: { width: "85%" },
     backgroundColor: "transparent",
-    // colors: ["#3D82A1", "#002741"],
   };
 
   return (
