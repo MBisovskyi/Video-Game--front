@@ -1,18 +1,4 @@
 .platform-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.platform-chart-text-field {
-  width: 47%;
-  text-align: justify;
-  padding: 4rem 3rem;
-  font-size: 22px;
-  font-family: "Varela Round", sans-serif;
-  color: #3d82a1;
-}
-
-.bestplatformchart-wrap {
-  background-color: transparent;
-  width: 47%;
+  width: 80%;
+  padding: 2rem;
 }

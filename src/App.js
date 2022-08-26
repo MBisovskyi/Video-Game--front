@@ -22,8 +22,12 @@ function App() {
     <div className="App">
       <NavBar />
       <div className="app-content-wrap">
-        <BestPlatformChart videoGames={videoGames} />
-        <BestGameGenreChart videoGames={videoGames} />
+        <div className="content-charts">
+          <BestPlatformChart videoGames={videoGames} />
+          <BestGameGenreChart videoGames={videoGames} />
+        </div>
+      </div>
+      <div>
         <VideoGame videoGames={videoGames} />
       </div>
 

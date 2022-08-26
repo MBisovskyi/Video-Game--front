@@ -8,11 +8,13 @@
 .App {
   min-height: 100vh;
   background-color: #c8c8c8;
-  position: relative;
   padding: 0 0 1rem 0;
 }
 
-.app-content-wrap {
-  margin-bottom: 5rem;
-  padding: 3rem 0 0 0;
+.content-charts {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  padding: 1rem;
 }

@@ -1,21 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Varela+Round&display=swap");
-
 .genre-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.genre-chart-text-field {
-  width: 47%;
-  text-align: justify;
-  padding: 6rem 3rem;
-  font-size: 22px;
-  font-family: "Varela Round", sans-serif;
-  color: #3d82a1;
-}
-
-.bestgamegenrechart-wrap {
-  background-color: transparent;
-  width: 47%;
-  margin-left: 3%;
+  width: 80%;
+  padding: 2rem;
 }

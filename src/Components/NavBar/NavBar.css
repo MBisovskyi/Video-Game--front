@@ -1,18 +1,25 @@
 .navbar-wrap {
-  background-color: #002741;
-  padding: 2rem;
-  box-shadow: 3px 3px 6px rgb(50, 50, 50);
+  position: relative;
 }
 
-.navbar-wrap p {
+.navbar-wrap img {
+  width: 100%;
+}
+
+.navbar-wrap div {
+  background-color: #002741;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  translate: -50%;
   color: #ef972c;
-  width: 16.2%;
+  width: 15.6%;
   margin: auto;
   font-size: 36px;
   border: 2px solid #c8c8c8;
   border-radius: 20px;
   padding: 1rem;
-  box-shadow: 0px 0px 35px #d7d7d7;
+  box-shadow: 0px 0px 35px #000000;
 }
 
 .navbar-wrap span {

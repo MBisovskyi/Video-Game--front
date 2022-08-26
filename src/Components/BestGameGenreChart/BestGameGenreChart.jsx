@@ -14,16 +14,15 @@ const BestGameGenreChart = ({ videoGames }) => {
     for (let i = 0; i < genresArray.length; i++) {
       genreGlobalSales += genresArray[i].globalsales;
     }
-    return [genre, genreGlobalSales, "#3D82A1"];
+    return [genre, genreGlobalSales];
   });
 
-  const data = [
-    ["Console", "Sold (millions)", { role: "style" }],
-    ...gamesGenreData,
-  ];
+  const data = [["Console", "Sold (millions)"], ...gamesGenreData];
 
   const options = {
     title: "Best video game genre based on video game copies sold since 2013",
+    pieHole: 0.4,
+    is3D: false,
     titleTextStyle: { color: "#3D82A1", fontSize: "22" },
     chartArea: { width: "100%" },
     hAxis: {
@@ -31,36 +30,19 @@ const BestGameGenreChart = ({ videoGames }) => {
       titleTextStyle: { color: "#3D82A1" },
     },
     backgroundColor: "transparent",
-    colors: ["#3D82A1"],
+    colors: ["#3D82A1", "#002741"],
   };
 
   return (
     <div className="genre-container">
       <div className="bestgamegenrechart-wrap">
         <Chart
-          chartType="ColumnChart"
+          chartType="PieChart"
           width="100%"
           height="500px"
           data={data}
           options={options}
         />
-      </div>
-      <div className="genre-chart-text-field">
-        <p>
-          Hello! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur nulla justo, aliquet in iaculis non, pharetra in ipsum. Ut a
-          ultricies tortor. Sed eu scelerisque elit. Aliquam erat volutpat.
-          Etiam laoreet nec purus ut ornare. Quisque vitae maximus magna.
-          Quisque sed tempus erat, tempus pretium elit. Suspendisse pretium,
-          enim pharetra aliquet sollicitudin, elit nunc dapibus orci, et mollis
-          tellus tortor a turpis. Pellentesque ut fringilla nibh. Aenean
-          tincidunt non lorem et ullamcorper. Vivamus vel felis non sem
-          tristique blandit eget at nulla. In dapibus dignissim sagittis. Donec
-          vel sapien vitae nibh suscipit volutpat. Pellentesque sit amet eros
-          pulvinar, elementum ex nec, posuere lorem. In hac habitasse platea
-          dictumst. Maecenas pulvinar lobortis nibh sed dignissim. Aenean auctor
-          quam a tempus consequat.
-        </p>
       </div>
     </div>
   );
