@@ -35,3 +35,7 @@
   translate: -50%;
   top: 65%;
 }
+
+.navbar-wrap a {
+  cursor: pointer;
+}
