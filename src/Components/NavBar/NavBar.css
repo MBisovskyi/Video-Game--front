@@ -1,5 +1,6 @@
 .navbar-wrap {
   position: absolute;
+  width: 100%;
 }
 
 .navbar-wrap img {
@@ -7,14 +8,14 @@
   box-shadow: 3px 3px 12px black;
 }
 
-.navbar-wrap div {
+.navbar-logo {
   background-color: #002741;
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 30%;
   translate: -50%;
   color: #ef972c;
-  width: 17.9%;
+  width: 16.1%;
   margin: auto;
   font-size: 36px;
   border: 2px solid #c8c8c8;
@@ -25,4 +26,11 @@
 
 .navbar-wrap span {
   color: #c8c8c8;
+}
+
+.searchgame-container {
+  position: absolute;
+  text-align: center;
+  left: 47.5%;
+  top: 75%;
 }

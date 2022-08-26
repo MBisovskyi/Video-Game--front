@@ -13,8 +13,15 @@
   font-family: "Varela Round", sans-serif;
 }
 
+.App > img {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
 .app-content-wrap {
-  padding-top: 25rem;
+  padding-top: 24rem;
 }
 
 .content-charts {
@@ -22,16 +29,18 @@
   justify-content: space-between;
   margin: auto;
   width: 90%;
-  padding: 1rem 1rem 0 1rem;
+  padding: 5rem 1rem 0 1rem;
   background-color: rgba(200, 200, 200, 0.6);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 3px 3px 12px black;
 }
 
-.App > img {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  z-index: -1;
+.gamedetails-wrap {
+  width: 80%;
+  margin: auto;
+  margin-top: 7rem;
+  border: 3px solid white;
+  color: white;
+  padding: 2rem;
 }
