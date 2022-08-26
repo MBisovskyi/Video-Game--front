@@ -7,13 +7,18 @@ const SearchGame = (props) => {
 
   useEffect(() => {}, []);
 
+  function notFoundGame(e) {
+    setInput("Not found");
+    e.preventDefault();
+  }
+
   async function gameDetails() {
     let gameFound = props.videoGames.filter(
       (game) =>
         game.name.toLowerCase().includes(input.toLowerCase()) ||
         game.name.toLowerCase() === input.toLowerCase()
     );
-    gameFound[0] ? setInput("") : setInput("Not found");
+    gameFound[0] ? setInput("") : notFoundGame();
     props.setSingleGame(gameFound);
   }
 
