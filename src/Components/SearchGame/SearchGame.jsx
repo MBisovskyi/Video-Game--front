@@ -11,7 +11,7 @@ const SearchGame = (props) => {
 
   return (
     <div className="searchgame-wrap">
-      <label>Search Game</label>
+      <h2>Search Game</h2>
       <form>
         <input
           className="searchgame-input-field"

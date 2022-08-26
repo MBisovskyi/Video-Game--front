@@ -23,7 +23,8 @@ const BestGameGenreChart = ({ videoGames }) => {
     title: "Best video game genre based on video game\n copies sold since 2010",
     pieHole: 0.6,
     is3D: false,
-    titleTextStyle: { color: "#002741", fontSize: "22" },
+    legendTextStyle: { color: "#FFF", fontSize: "16" },
+    titleTextStyle: { color: "rgb(239, 151, 44)", fontSize: "22" },
     chartArea: { width: "85%" },
     backgroundColor: "transparent",
   };

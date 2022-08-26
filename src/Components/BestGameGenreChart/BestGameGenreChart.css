@@ -1,20 +1,26 @@
 .genre-container {
-  width: 80%;
-  padding: 2rem 2rem 0 2rem;
+  margin: 3rem 3rem 3rem 0;
+  width: 37%;
+  padding-left: 3rem;
+  padding-top: 3rem;
   position: relative;
+  background-color: rgba(0, 39, 65, 0.5);
+  border-radius: 30px;
+  box-shadow: 0 0 9px 6px rgba(0, 39, 65, 0.7);
+  border: 1px solid rgb(133, 133, 133);
 }
 
 .genre-text {
   position: absolute;
   text-align: center;
   width: 17%;
-  left: 26.5%;
-  top: 15.9rem;
+  left: 30.5%;
+  top: 50%;
   font-size: 20px;
   text-transform: uppercase;
   padding: 1rem;
   border-radius: 30px;
   background-color: #002741;
   color: #c8c8c8;
-  border: 1px solid white;
+  box-shadow: 0 0 1px 3px rgb(255, 255, 255);
 }

@@ -25,9 +25,10 @@ const ColumnChart = ({ videoGames }) => {
   const options = {
     title:
       "Best video game platform based on video game\n copies sold since 2013",
-    titleTextStyle: { color: "#002741", fontSize: "22" },
+    titleTextStyle: { color: "rgb(239, 151, 44)", fontSize: "22" },
     pieHole: 0.6,
     is3D: false,
+    legendTextStyle: { color: "#FFF", fontSize: "16" },
     chartArea: { width: "85%" },
     backgroundColor: "transparent",
   };
