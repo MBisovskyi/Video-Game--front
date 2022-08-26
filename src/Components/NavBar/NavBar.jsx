@@ -10,7 +10,10 @@ const NavBar = (props) => {
         VideoGamer <span>Data</span>
       </div>
       <div className="searchgame-container">
-        <SearchGame findGame={props.findGame} />
+        <SearchGame
+          setSingleGame={props.setSingleGame}
+          videoGames={props.videoGames}
+        />
       </div>
     </div>
   );

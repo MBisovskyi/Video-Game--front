@@ -9,35 +9,32 @@ import BestGameGenreChart from "./Components/BestGameGenreChart/BestGameGenreCha
 
 function App() {
   const [videoGames, setVideoGames] = useState([]);
-  const [searchInput, setSearchInput] = useState();
   const [singleGame, setSingleGame] = useState([]);
 
   useEffect(() => {
     getAllVideoGames();
   }, []);
 
-  useEffect(() => {
-    gameDetails();
-  }, [searchInput]);
+  useEffect(() => {}, [singleGame]);
 
   async function getAllVideoGames() {
     let response = await axios.get("http://localhost:8080/all");
     setVideoGames(response.data);
   }
 
-  async function gameDetails() {
-    let gameFound = videoGames.filter(
-      (game) =>
-        game.name.toLowerCase().includes(searchInput.toLowerCase()) ||
-        game.name.toLowerCase() === searchInput.toLowerCase()
-    );
-    setSingleGame(gameFound);
-  }
+  // async function gameDetails() {
+  //   let gameFound = videoGames.filter(
+  //     (game) =>
+  //       game.name.toLowerCase().includes(searchInput.toLowerCase()) ||
+  //       game.name.toLowerCase() === searchInput.toLowerCase()
+  //   );
+  //   setSingleGame(gameFound);
+  // }
 
   return !singleGame[0] ? (
     <div className="App">
       <img src={Bg} alt="background" />
-      <NavBar findGame={setSearchInput} />
+      <NavBar setSingleGame={setSingleGame} videoGames={videoGames} />
       <div className="app-content-wrap">
         <div className="content-charts">
           <BestPlatformChart videoGames={videoGames} />
@@ -49,7 +46,7 @@ function App() {
   ) : (
     <div className="App">
       <img src={Bg} alt="background" />
-      <NavBar findGame={setSearchInput} />
+      <NavBar setSingleGame={setSingleGame} videoGames={videoGames} />
       <div className="app-content-wrap">
         <div className="gamedetails-wrap">
           <h2 className="gamedetails-name">

@@ -1,12 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./SearchGame.css";
 
 const SearchGame = (props) => {
   const [input, setInput] = useState("");
+  const [searchInput, setSearchInput] = useState();
 
-  async function submitHandle() {
-    props.findGame(input);
-    setInput("");
+  useEffect(() => {}, []);
+
+  async function gameDetails() {
+    let gameFound = props.videoGames.filter(
+      (game) =>
+        game.name.toLowerCase().includes(input.toLowerCase()) ||
+        game.name.toLowerCase() === input.toLowerCase()
+    );
+    gameFound[0] ? setInput("") : setInput("Not found");
+    props.setSingleGame(gameFound);
   }
 
   return (
@@ -20,7 +28,7 @@ const SearchGame = (props) => {
           onChange={(event) => setInput(event.target.value)}
         ></input>
       </form>
-      <button onClick={submitHandle} type="submit">
+      <button onClick={gameDetails} type="submit">
         Find
       </button>
     </div>
