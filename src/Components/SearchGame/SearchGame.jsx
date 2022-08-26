@@ -12,6 +12,10 @@ const SearchGame = (props) => {
     e.preventDefault();
   }
 
+  function inputFocus() {
+    setInput("");
+  }
+
   async function gameDetails() {
     let gameFound = props.videoGames.filter(
       (game) =>
@@ -31,6 +35,7 @@ const SearchGame = (props) => {
           type="text"
           value={input}
           onChange={(event) => setInput(event.target.value)}
+          onClick={inputFocus}
         ></input>
       </form>
       <button onClick={gameDetails} type="submit">
