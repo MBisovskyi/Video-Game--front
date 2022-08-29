@@ -1,9 +1,11 @@
 import "./Footer.css";
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <div className="footer-wrap">
-      <p>Copyright ©2022</p>
+      <div className="footer-inner-container">
+        <p>Copyright ©2022</p>
+      </div>
     </div>
   );
 };
