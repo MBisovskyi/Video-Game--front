@@ -40,7 +40,7 @@ function App() {
       <img src={Bg} alt="background" />
       <NavBar setSingleGame={setSingleGame} videoGames={videoGames} />
       <div className="app-content-wrap">
-        <VideoGame singleGame={singleGame} />
+        <VideoGame singleGame={singleGame} videoGames={videoGames} />
       </div>
       <Footer />
     </div>

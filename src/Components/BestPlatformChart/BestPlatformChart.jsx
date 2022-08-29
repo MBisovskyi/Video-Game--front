@@ -1,5 +1,4 @@
 import "./BestPlatformChart.css";
-import React, { useEffect, useState } from "react";
 import { Chart } from "react-google-charts";
 
 const ColumnChart = ({ videoGames }) => {
@@ -35,16 +34,14 @@ const ColumnChart = ({ videoGames }) => {
 
   return (
     <div className="platform-container">
-      <div className="bestplatformchart-wrap">
-        <p className="platform-text">Platform</p>
-        <Chart
-          chartType="PieChart"
-          width="100%"
-          height="500px"
-          data={data}
-          options={options}
-        />
-      </div>
+      <p className="platform-text">Platform</p>
+      <Chart
+        chartType="PieChart"
+        width="100%"
+        height="500px"
+        data={data}
+        options={options}
+      />
     </div>
   );
 };

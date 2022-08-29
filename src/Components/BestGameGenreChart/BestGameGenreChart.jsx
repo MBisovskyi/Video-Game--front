@@ -31,16 +31,14 @@ const BestGameGenreChart = ({ videoGames }) => {
 
   return (
     <div className="genre-container">
-      <div className="bestgamegenrechart-wrap">
-        <p className="genre-text">Genre</p>
-        <Chart
-          chartType="PieChart"
-          width="100%"
-          height="500px"
-          data={data}
-          options={options}
-        />
-      </div>
+      <p className="genre-text">Genre</p>
+      <Chart
+        chartType="PieChart"
+        width="100%"
+        height="500px"
+        data={data}
+        options={options}
+      />
     </div>
   );
 };
