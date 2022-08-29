@@ -10,11 +10,9 @@ const NavBar = (props) => {
   return (
     <div className="navbar-wrap">
       <img src={navbarImg} alt="banner" />
-      <a onClick={refreshPage}>
-        <div className="navbar-logo">
-          VideoGamer <span>Data</span>
-        </div>
-      </a>
+      <div onClick={refreshPage} className="navbar-logo">
+        VideoGamer <span>Data</span>
+      </div>
       <div className="searchgame-container">
         <SearchGame
           setSingleGame={props.setSingleGame}

@@ -3,7 +3,6 @@ import "./SearchGame.css";
 
 const SearchGame = (props) => {
   const [input, setInput] = useState("");
-  const [searchInput, setSearchInput] = useState();
 
   useEffect(() => {}, []);
 
