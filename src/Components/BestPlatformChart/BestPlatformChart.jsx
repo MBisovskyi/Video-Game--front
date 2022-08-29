@@ -19,11 +19,11 @@ const ColumnChart = ({ videoGames }) => {
     return [platform, platformGlobalSales];
   });
 
-  const data = [["Console", "Sold (millions)"], ...platformsData];
+  const data = [["Platform", "Sold (millions)"], ...platformsData];
 
   const options = {
     title:
-      "Best video game platform based on video game\n copies sold since 2013",
+      "Best video game platform based on video game\n copies (millions) sold since 2013",
     titleTextStyle: { color: "rgb(239, 151, 44)", fontSize: "22" },
     pieHole: 0.6,
     is3D: false,

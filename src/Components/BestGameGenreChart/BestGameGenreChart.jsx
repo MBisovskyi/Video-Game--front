@@ -17,10 +17,11 @@ const BestGameGenreChart = ({ videoGames }) => {
     return [genre, genreGlobalSales];
   });
 
-  const data = [["Console", "Sold (millions)"], ...gamesGenreData];
+  const data = [["Genre", "Sold (millions)"], ...gamesGenreData];
 
   const options = {
-    title: "Best video game genre based on video game\n copies sold since 2010",
+    title:
+      "Best video game genre based on video game\n copies (millions) sold since 2010",
     pieHole: 0.6,
     is3D: false,
     legendTextStyle: { color: "#FFF", fontSize: "16" },

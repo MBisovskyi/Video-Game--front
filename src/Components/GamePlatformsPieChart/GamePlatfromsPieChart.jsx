@@ -15,7 +15,7 @@ const GamePlatformsBarChart = (props) => {
   const data = [["Platform", "Copies Sold"], ...gamesPlatforms];
 
   const options = {
-    title: "Game copies sold by game platform",
+    title: "Game copies (millions) sold by game platform",
     titleTextStyle: { color: "rgb(239, 151, 44)", fontSize: "26" },
     pieHole: 0.5,
     is3D: false,
