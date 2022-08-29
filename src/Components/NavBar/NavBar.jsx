@@ -1,7 +1,6 @@
 import "./NavBar.css";
 import navbarImg from "./assets/navbar.jpg";
 import SearchGame from "../SearchGame/SearchGame";
-import { Navigate } from "react-router-dom";
 
 const NavBar = (props) => {
   function refreshPage() {

@@ -7,9 +7,9 @@ const SearchGame = (props) => {
 
   useEffect(() => {}, []);
 
-  function notFoundGame(e) {
+  function gameNotFound(event) {
     setInput("Not found");
-    e.preventDefault();
+    event.preventDefault();
   }
 
   function inputFocus() {
@@ -22,7 +22,7 @@ const SearchGame = (props) => {
         game.name.toLowerCase().includes(input.toLowerCase()) ||
         game.name.toLowerCase() === input.toLowerCase()
     );
-    gameFound[0] ? setInput("") : notFoundGame();
+    gameFound[0] ? setInput("") : gameNotFound();
     props.setSingleGame(gameFound);
   }
 
